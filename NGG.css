@@ -1,0 +1,139 @@
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('https://asset.gecdesigns.com/img/wallpapers/beautiful-fantasy-wallpaper-ultra-hd-wallpaper-4k-sr10012418-1706506236698-cover.webp');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#Body {
+    padding: 20svh 10svw;
+    /* min-width: 835px; */
+    background-color: hsla(180, 100%, 50%, 0.192);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#inp_section {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    gap: 3svw;
+    align-items: center;
+    margin-top: 3svh;
+}
+
+.div {
+    margin-block: 3svh;
+}
+
+#Head {
+    font-size: clamp(0.5, 2vw, 1rem);
+}
+
+.Label {
+    font-weight: bold;
+    font-size: clamp(0.5, 2vw, 1rem);
+}
+
+#display {
+    font-weight: bold;
+    font-size: clamp(0.5, 2vw, 1rem);
+}
+
+#NGG_Btn {
+    padding: 1.4svh 2svw;
+    border: 2px solid hsla(216, 91%, 46%, 0.884);
+    color: hsla(0, 0%, 0%, 0.9);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 0.9rem;
+    font-size: 0.9rem;
+    transition: all 0.25s ease-in-out;
+}
+
+#NGG_Btn:hover {
+    scale: 1.1;
+    cursor: pointer;
+    border-color: hsla(216, 91%, 36%, 0.884);
+    color: hsla(0, 0%, 0%, 0.8);
+}
+
+#NGG_Btn:active {
+    scale: 0.9;
+    border-color: hsla(216, 91%, 56%, 0.884);
+    color: hsla(0, 0%, 0%);
+}
+
+#guess {
+    display: none;
+    border: 2px solid hsla(216, 91%, 46%, 0.884);
+    background-color: transparent;
+    text-align: center;
+    padding: 1svh 2svw;
+    font-size: clamp(0.5, 2vw, 1rem);
+    border-radius: 1rem;
+    transition: all 0.25s ease-in-out;
+    /* position: fixed;
+    z-index: -1; */
+}
+
+#guess:focus {
+    outline: none;
+}
+
+#guess:focus::placeholder {
+    color: transparent;
+}
+
+#guess::placeholder {
+    color: hsla(207, 21%, 82%,);
+    font-size: clamp(0.5, 2vw, 1rem);
+    font-family: 'Poppins', sans-serif;
+}
+
+#guess:hover {
+    scale: 1.1;
+    border-color: hsla(216, 91%, 36%, 0.884);
+}
+
+#guess:active {
+    scale: 0.95;
+    border-color: hsla(216, 91%, 56%, 0.884);
+}
